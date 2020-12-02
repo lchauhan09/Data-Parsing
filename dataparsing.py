@@ -52,4 +52,4 @@ df_merged = df_merged.drop([9,10,11,12,13], axis=1)	#Removed useless columns 9 t
 df_merged = df_merged.rename(columns=df_merged.iloc[0])	#Replaced the column indices with the column names
 df_merged = df_merged.drop(df_merged.index[0])		#Dropped the indices column for rows
 df_merged.to_csv('Data.csv', index=False)		#Converted the dataframe to .csv format and made a file
-print 'Done'		#Printed a message to show that everything was done successfully without error
+print ('Done')		#Printed a message to show that everything was done successfully without error
